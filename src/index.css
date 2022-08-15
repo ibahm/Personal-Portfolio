@@ -24,6 +24,7 @@ code {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 1rem;
   border-bottom: 1px solid rgb(15, 26, 60);
 }
@@ -74,7 +75,9 @@ code {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10em 5em;
+  margin: 0 5em;
+  margin-top: 10em;
+  margin-bottom: 30em;
 }
 
 .brief-welcome {
@@ -93,4 +96,35 @@ code {
   margin: 1rem 0;
   color: rgba(255, 255, 255, 0.5);
   max-width: 450px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10em 5em;
+}
+
+.about-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 75px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.about-container span {
+  color: rgb(122, 254, 112);
+}
+
+.about-desc1 {
+  margin: 1rem 0;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+}
+
+.about-desc2 {
+  margin: 1rem 0;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
 }
