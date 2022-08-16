@@ -47,6 +47,9 @@ code {
   padding: 1rem;
   border-bottom: 1px solid rgb(15, 26, 60);
   background: rgb(13, 23, 54);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .nav-container ul {
@@ -88,6 +91,10 @@ code {
 .nav-resume:hover {
   cursor: pointer;
   background-color: rgba(17, 255, 0, 0.1);
+}
+
+.nav-resume:active {
+  transform: scale(1.1);
 }
 
 .brief-container {
@@ -135,6 +142,7 @@ code {
 
 .about-container span {
   color: rgb(122, 254, 112);
+  font-weight: 500;
 }
 
 .about-desc1 {
@@ -162,7 +170,7 @@ code {
   gap: 15px;
   position: relative;
   margin: 1em;
-  max-width: 950px;
+  max-width: 650px;
   min-width: 300px;
 }
 
@@ -170,13 +178,14 @@ code {
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(18, 30, 65);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2rem;
   transition: all 0.2s ease-in 0s;
 }
 
 .project-container:hover {
   background-color: rgb(15, 26, 60);
+  border: 1px solid rgb(122, 254, 112, 0.5);
   transform: translateY(-10px);
 }
 
@@ -196,6 +205,7 @@ code {
 .project-link:hover {
   cursor: pointer;
   color: rgba(122, 254, 112, 1);
+  transform: scale(1.6);
 }
 
 .project-header h3 {
@@ -217,6 +227,7 @@ code {
 .project-text span {
   font-size: 11px;
   color: rgb(122, 254, 112);
+  font-family: 'Fira Mono', monospace;
   padding-right: 1.5em;
 }
 
