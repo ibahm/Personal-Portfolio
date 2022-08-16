@@ -14,8 +14,27 @@ code {
     monospace;
 }
 
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #9e9e9e #ffffff;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #9e9e9eb4;
+    border-radius: 10px;
+    border: none;
+  }
+
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 
@@ -27,6 +46,7 @@ code {
   flex-wrap: wrap;
   padding: 1rem;
   border-bottom: 1px solid rgb(15, 26, 60);
+  background: rgb(13, 23, 54);
 }
 
 .nav-container ul {
@@ -62,7 +82,7 @@ code {
   padding: 0.8rem 1rem;
   font-family: 'Fira Mono', monospace;
   color: rgb(17, 255, 0);
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.1s ease-in 0s;
 }
 
 .nav-resume:hover {
@@ -75,9 +95,8 @@ code {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 5em;
-  margin-top: 10em;
-  margin-bottom: 30em;
+  margin: 10em 5em;
+  margin-bottom: 35em;
 }
 
 .brief-welcome {
@@ -102,8 +121,9 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
   margin: 10em 5em;
+  margin-bottom: 45em;
 }
 
 .about-name {
@@ -127,4 +147,80 @@ code {
   margin: 1rem 0;
   color: rgba(255, 255, 255, 0.5);
   max-width: 600px;
+}
+
+.projectlist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45em;
+}
+
+.projectlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
+  margin: 1em;
+  max-width: 950px;
+  min-width: 300px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(18, 30, 65);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 0.2s ease-in 0s;
+}
+
+.project-container:hover {
+  background-color: rgb(15, 26, 60);
+  transform: translateY(-10px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-link {
+  color: rgba(122, 254, 112, 0.5);
+  transform: scale(1.5);
+  transition: all 0.1s ease-in 0s;
+}
+
+.project-link:hover {
+  cursor: pointer;
+  color: rgba(122, 254, 112, 1);
+}
+
+.project-header h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.project-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-text p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.project-text span {
+  font-size: 11px;
+  color: rgb(122, 254, 112);
+  padding-right: 1.5em;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: flex-start;
 }

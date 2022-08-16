@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Brief = () => {
+
+    useEffect(() => {
+        Aos.init({});
+    }, []);
+
     return (
-        <div className="brief-container">
+        <div data-aos="zoom-in-down" data-aos-duration="1000" className="brief-container">
             <div className="brief-text">
                 <p className="brief-welcome">Welcome!</p>
                 <h1 className="brief-name">Ahmed Ahmed</h1>
