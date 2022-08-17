@@ -23,10 +23,6 @@ code {
     width: 6px;
   }
 
-  *::-webkit-scrollbar-track {
-    
-  }
-
   *::-webkit-scrollbar-thumb {
     background-color: #9e9e9eb4;
     border-radius: 10px;
