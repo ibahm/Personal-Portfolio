@@ -102,8 +102,7 @@ code {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10em 5em;
-  margin-bottom: 35em;
+  margin: 15em 5em 25em 5em;
 }
 
 .brief-welcome {
@@ -129,8 +128,7 @@ code {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;  
-  margin: 10em 5em;
-  margin-bottom: 45em;
+  margin: 15em 5em 25em 5em;
 }
 
 .about-name {
@@ -161,7 +159,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 45em;
+  margin: 15em 5em 25em 5em;
 }
 
 .projectlist-grid {
