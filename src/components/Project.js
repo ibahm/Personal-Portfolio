@@ -10,7 +10,7 @@ const Project = ({head, text, link, lang1, lang2, lang3, anim}) => {
     }, []);
 
     return (
-        <div data-aos="fade-down" data-aos-duration={anim}>
+        <div data-aos="fade-down" data-aos-duration="900" data-aos-delay={anim}>
             <div className="project-container">
                 <div className="project-header">
                     <h3>{head}</h3>
