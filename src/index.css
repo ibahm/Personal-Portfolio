@@ -46,6 +46,7 @@ code {
   position: sticky;
   top: 0;
   z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .nav-container ul {
@@ -111,6 +112,9 @@ code {
   font-size: 75px;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
 }
 
 .brief-desc {
@@ -132,6 +136,9 @@ code {
   font-size: 75px;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
 }
 
 .about-container span {
@@ -177,6 +184,7 @@ code {
   padding: 2rem;
   min-height: 230px;
   transition: all 0.2s ease-in 0s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .project-container:hover {
