@@ -36,7 +36,7 @@ code {
 
 .nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -47,6 +47,43 @@ code {
   top: 0;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.nav-github {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.5);
+  padding: 0 1rem;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.nav-github:hover {
+  color: rgb(17, 255, 0);
+  transform: scale(1.7);
+  cursor: pointer;
+}
+
+.nav-top {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 1rem;
+  transform:scale(1.5);
+  animation: bounce infinite 3s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.nav-top:hover {
+  color: rgb(17, 255, 0);
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); transform:scale(1.5);}
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); transform:scale(1.5);}
+}
+
+.nav-top:hover {
+  cursor: pointer;
 }
 
 .nav-container ul {
@@ -91,7 +128,7 @@ code {
 }
 
 .nav-resume:active {
-  transform: scale(1.1);
+  transform: scale(0.95);
 }
 
 .brief-container {
@@ -240,4 +277,42 @@ code {
 .project-footer {
   display: flex;
   justify-content: flex-start;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;  
+  margin: 0;
+  margin-bottom: 10em;
+}
+
+.contact-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 75px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
+}
+
+.contact-text {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 15px 0;
+}
+
+.contact-email {
+  padding: 0.8rem 3rem;
+  font-family: 'Fira Mono', monospace;
+  transform: scale(1.5);
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.1s ease-in 0s;
+}
+
+.contact-email:hover {
+  cursor: pointer;
+  color: rgb(17, 255, 0);
+  transform: scale(1.7);
 }
