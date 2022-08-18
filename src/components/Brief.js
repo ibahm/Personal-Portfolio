@@ -9,7 +9,7 @@ const Brief = () => {
     }, []);
 
     return (
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="700" className="brief-container">
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" className="brief-container">
             <div className="brief-text">
                 <p className="brief-welcome">Welcome!</p>
                 <h1 className="brief-name">Ahmed Ahmed</h1>

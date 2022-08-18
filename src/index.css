@@ -116,10 +116,12 @@ code {
   border: 1px solid;
   border-radius: 2px;
   background-color: rgba(0,0,0,0);
-  padding: 0.8rem 3rem;
+  padding: 0.3rem 2rem;
   font-family: 'Fira Mono', monospace;
+  font-size: 12px;
   color: rgb(17, 255, 0);
   transition: all 0.1s ease-in 0s;
+  text-decoration: none;
 }
 
 .nav-resume:hover {
@@ -284,8 +286,8 @@ code {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;  
-  margin: 0;
-  margin-bottom: 10em;
+  margin: 0 1em;
+  margin-bottom: 12em;
 }
 
 .contact-name {
@@ -304,15 +306,14 @@ code {
 }
 
 .contact-email {
-  padding: 0.8rem 3rem;
   font-family: 'Fira Mono', monospace;
   transform: scale(1.5);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   transition: all 0.1s ease-in 0s;
 }
 
 .contact-email:hover {
   cursor: pointer;
   color: rgb(17, 255, 0);
-  transform: scale(1.7);
+  transform: scale(1.65);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import {MdOutlineEmail} from "react-icons/md"
+import {MdOutlineEmail} from "react-icons/md";
 
 const Contact = () => {
     return (
